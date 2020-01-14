@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    ackground-color: lightblue;
+    color: darkblue;
+    align-content: center;
+    padding: 20px;
+    border: solid 5px darkblue;
+    margin-bottom: 50px;
+}
+
+body{
+    text-align: center;
+    color: blue
+    font-family: 'Lobster', cursive;
+    background-image: ('https://pixabay.com/photos/nissan-skyline-nissan-car-show-3546824/500/500')
+    
+}
+h2{
+    font-family: 'Lobster', cursive;
+    color: darkblue
+    
+}
+main{
+    border: solid 5px darkblue;
+    margin-bottom: 50px;
+}
