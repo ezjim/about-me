@@ -1,30 +1,38 @@
-*{
-    box-sizing: border-box;
-}
-header{
-    font-family: 'Lobster', cursive;
-    font-size: 40px;
-    ackground-color: lightblue;
-    color: darkblue;
-    align-content: center;
-    padding: 20px;
-    border: solid 5px darkblue;
-    margin-bottom: 50px;
-}
-
-body{
+main {
+  background-color: #2196F3;
+  background-size: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  header {
     text-align: center;
-    color: blue
-    font-family: 'Lobster', cursive;
-    background-image: ('https://pixabay.com/photos/nissan-skyline-nissan-car-show-3546824/500/500')
-    
-}
-h2{
-    font-family: 'Lobster', cursive;
-    color: darkblue
-    
-}
-main{
-    border: solid 5px darkblue;
-    margin-bottom: 50px;
-}
+    font-family: fantasy;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  button{
+    width: 100px;
+    border: 5px blueviolet solid;
+    border-radius: 5px;
+  }
+  
+  input {
+    border-style: dotted 5px;
+      border-bottom: .25rem solid red;
+      height: 1.5rem;
+      font-size: 1rem;
+      padding-left: 0.875rem;
+      line-height: 147.6%;
+      padding-top: 0.825rem;
+    padding-bottom: 0.5rem;
+    margin-right: 50px;
+  }
+  
+  p {
+    font-family: arial;
+  }

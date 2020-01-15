@@ -1,45 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css"
-    alt="rbthirtyfour" />
-    <title>Racecars</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guess The Number</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
- <header> 
-    Racecars!!
-    <article>
-        <img height="400" width="700" src="https://cdn.pixabay.com/photo/2018/07/18/17/27/nissan-skyline-3546824_960_720.jpg" alt="skyline"/>
-   </article>
-</header>
-<main>
-    <article>
-        <img src="https://cdn.pixabay.com/photo/2018/07/27/10/00/car-3565626_960_720.png"   alt= "nismo">
-        
-        <h2>
-            <li>Racecars go fast</li>
-            <li>Makes your heart beat faster</li>
-            <li>poppin clutches, and pulling e-brakes</li>
-            <li>welded diff for days</li>
-            <li>4-bangers, inline 6-ers, and v8-thirstybois</li>
-            </aricle>
-        </h2>
-    </article>
-</main>
-<div>
-    <button id="testButton">Take Quiz!</button>
-</div>
-  <section id="results">
-    <h2>Your Results:</h2>
-    <p id="total"></p>
-  </section>
-</main>
-<script src="./app.js" type="module"></script>
+  <header>
+    <h1>Guess the Number!</h1>
+    <img src ='https://www.sciencenews.org/sites/default/files/2018/05/main/articles/050718_EC_numbers_feat.jpg'</img>
+  </header>
+  <main>
+    <section>
+      <p>>Hey!!  This is the numbers game! Guess a number between 1 and 20.</p>
+    </section>
+    <section>
+      <input type="number" id="enter-guess" min="1" max="20">
+      <button id="submit-guess">Try</button>
+      <p>Tries remaining: <span id="tries">4</span></p>
+      <p class="hidden" id="temp-container">You guess is: <span id="temp-display">too high</span></p>
+      <p class="hidden" id="result-container">You just: <span id="result-display">won</span></p>
+    </section>
+    <!-- THIS REFRESHES THE PAGE SO YOU CAN GUESS AGAIN -->
+    <button onClick="window.location.reload();">Refresh MEEE!</button>
+  </main>
+  <script src="./checknumbers.js" type="module"></script>
 </body>
-
 </html>
