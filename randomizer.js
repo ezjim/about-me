@@ -1,11 +1,9 @@
-
-export default function checkNumbers(userGuess, correctNumber) {
-    if (!Number.isInteger(userGuess)) throw new Error('Please Enter a Number!');
-    if (userGuess === correctNumber) {
+export default function compare(guess, correctNumber) {
+    if (guess === correctNumber) {
         return 0;
-    } else if (userGuess < correctNumber) {
+    } else if (guess < correctNumber) {
         return -1;
-    } else if (userGuess > correctNumber) {
+    } else if (guess > correctNumber) {
         return 1;
     }
 }

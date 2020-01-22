@@ -11,6 +11,8 @@ const triesDisplay = document.getElementById('tries');
 
 let tries = 4;
 let correctNumber = Math.floor(Math.random() * 20);
+// if (correctNumber > 20 || correctNumber < 0) return "error";
+
 
 // THIS CHANGES THE STATE
 
@@ -36,5 +38,9 @@ checkButton.addEventListener('click', () => {
         checkButton.disabled = true;
         resultContainer.classList.remove('hidden');
         resultDisplay.textContent = 'lost';
+    }
+    if (checkNumbers(Number(userInput.value), correctNumber) === 2) {
+        tempDisplay.textContent = 'too high';
+        tempContainer.classList.remove('hidden');
     }
 });
